@@ -36,7 +36,7 @@ body {
   background-size: cover;
   background-position: center;
   /* Setting flex-grow to 1; flex-grow property specifies how much of the remaining space in the flex container should be assigned to the item (the flex grow factor) */
-  /* This makes each text container take equal amount of space within panel, filling all available space */
+  /* This makes each text container take equal amount of space within panel, filling all available space - evenly distribute extra room */
   flex: 1;
   /* Every element can be both a flex item and a flex container, as is the case here (there are flex items within panel, which is being made into a flex container, but panel is a flex item within .panels div) */
   display: flex;
@@ -105,4 +105,5 @@ body {
 
 .panel.open {
   font-size: 40px;
+  flex: 5;
 }
